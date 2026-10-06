@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ECOL 中古販売｜TOP A案（試作・SAMPLE）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sample-strip" role="note">試作（SAMPLE）・商品と価格はすべてサンプルです</div>
+
+<header class="head">
+  <div class="head-row">
+    <a class="brand" href="./" aria-label="ECOL TOPへ">
+      <span class="brand-mark">ECOL</span>
+      <span class="brand-sub">リサイクルショップ<br>釧路</span>
+    </a>
+    <form class="search" action="../products/" method="get" role="search">
+      <label class="sr-only" for="q">商品を探す</label>
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      <input id="q" name="q" type="search" placeholder="商品名・型番で探す" autocomplete="off">
+      <button type="submit">探す</button>
+    </form>
+    <div class="head-contact">
+      <a class="btn-line" href="https://lin.ee/YkisLc0" target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.2C4 7.2 7.6 4 12 4s8 3.2 8 7.2-3.6 7.2-8 7.2c-.8 0-1.6-.1-2.3-.3L6 20l.9-3.2C5.100 15.700 4 13.600 4 11.200Z"/></svg>
+        <span>LINEで相談</span>
+      </a>
+      <a class="tel" href="tel:07020335427" aria-label="電話 070-2033-5427">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.500 4h3l1.500 4-2 1.300a11 11 0 0 0 5.700 5.700L16 13l4 1.500v3a2 2 0 0 1-2 2A14 14 0 0 1 4.500 6a2 2 0 0 1 2-2Z"/></svg>
+        <span class="tel-num">070-2033-5427</span>
+      </a>
+    </div>
+  </div>
+  <nav class="cat-tabs" aria-label="カテゴリ" id="catTabs">
+    <a href="../products/?sort=new" class="cat-tab is-new">新着</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- 2 ヒーロー -->
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="hero-text">
+    <p class="mono kicker">ECOL RECYCLE SHOP KUSHIRO</p>
+    <h1 id="heroTitle">今週入った中古を、<br>入荷順に棚ごと見る。</h1>
+    <p class="lead">冷蔵庫から除雪機まで。入ったものを新しい順に並べています。売れた品も残すので、店の動きがそのまま見えます。</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#shelf">新着を見る</a>
+      <a class="btn btn-ghost" href="../products/">商品を探す</a>
+    </div>
+    <p class="hero-note mono" id="heroNote">掲載データ読込中…</p>
+  </div>
+  <figure class="hero-photo" id="heroPhoto">
+    <img src="../img/hero/a.jpg" alt="" width="1600" height="1000">
+    <figcaption class="mono">SAMPLE画像・実在庫ではありません</figcaption>
+  </figure>
+</section>
+
+<!-- 今週入荷の帯 -->
+<section class="ticker" aria-label="今週入荷" id="ticker">
+  <div class="ticker-label mono">今週入荷</div>
+  <div class="ticker-view"><ul class="ticker-track" id="tickerTrack"></ul></div>
+</section>
+
+<!-- 3 新着商品 -->
+<section class="shelf" id="shelf" aria-labelledby="shelfTitle">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="shelfTitle">新着商品</h2>
+      <p class="sec-note">入荷日の新しい順。SOLD OUTも残しています。価格は仮（SAMPLE）。</p>
+      <a class="sec-link" href="../products/?sort=new">すべての商品を見る →</a>
+    </div>
+    <ul class="grid" id="shelfGrid" aria-live="polite"></ul>
+  </div>
+</section>
+
+<!-- 4 カテゴリから探す -->
+<section class="cats" aria-labelledby="catsTitle">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="catsTitle">カテゴリから探す</h2>
+      <p class="sec-note">数字は販売中と取り置き中の点数（サンプルデータ）。</p>
+    </div>
+    <ol class="cat-list" id="catList"></ol>
+  </div>
+</section>
+
+<!-- 商品を探す導線 -->
+<section class="finder" aria-labelledby="finderTitle">
+  <div class="wrap finder-in">
+    <div class="finder-main">
+      <h2 id="finderTitle">探しものから入る</h2>
+      <form class="search search-lg" action="../products/" method="get" role="search">
+        <label class="sr-only" for="q2">キーワード</label>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="q2" name="q" type="search" placeholder="商品名・メーカー・型番" autocomplete="off">
+        <button type="submit">探す</button>
+      </form>
+      <ul class="chips" id="tagChips"></ul>
+    </div>
+    <div class="finder-side">
+      <p class="mono side-label">条件で絞る</p>
+      <ul class="quick">
+        <li><a href="../products/?status=available">販売中だけ</a></li>
+        <li><a href="../products/?pickup=1">店頭受取できるもの</a></li>
+        <li><a href="../products/?large=1">大型・要相談</a></li>
+        <li><a href="../products/?price=10">〜10,000円（仮）</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 状態のみかた -->
+<section class="ranks" aria-labelledby="ranksTitle">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="ranksTitle">状態のみかた</h2>
+      <p class="sec-note">ランクは仮の基準です（ECOLの検品体制に合わせて確定）。傷・汚れは商品ごとに文章で書きます。</p>
+    </div>
+    <dl class="rank-list" id="rankList"></dl>
+  </div>
+</section>
+
+<!-- 6 店頭受取・配送 / 7 大型の相談 -->
+<section class="guide" aria-labelledby="guideTitle">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="guideTitle">店頭受取・配送のご案内</h2>
+      <p class="sec-note">内容は仮です。<span class="tbc">要確認</span>の項目はECOLの回答待ち。</p>
+    </div>
+    <div class="guide-cols">
+      <div class="guide-col">
+        <h3>店頭で受取</h3>
+        <p>気になった商品はLINEか電話で取り置き相談。店頭でお渡しする流れを想定しています。</p>
+        <p class="tbc-line"><span class="tbc">要確認</span> 店頭営業の有無・受取時間・取り置き期間</p>
+      </div>
+      <div class="guide-col">
+        <h3>近隣配送</h3>
+        <p>釧路市周辺への配送を想定。対応エリアと料金は商品ごとにご案内します。</p>
+        <p class="tbc-line"><span class="tbc">要確認</span> 配送エリア・料金</p>
+      </div>
+      <div class="guide-col guide-large">
+        <h3>大型は相談</h3>
+        <p>冷蔵庫・洗濯機・ソファ・食器棚など。搬入サイズ、階数、住所をLINEで送ってください。</p>
+        <p class="tbc-line"><span class="tbc">要確認</span> 搬入料金・家電リサイクル対象品の引き取り</p>
+      </div>
+    </div>
+    <p class="guide-more"><a href="../guide/">店頭受取・配送の詳細へ →</a></p>
+  </div>
+</section>
+
+<!-- 8 店舗情報 -->
+<section class="store" aria-labelledby="storeTitle">
+  <div class="wrap store-in">
+    <div class="store-head">
+      <h2 id="storeTitle">店舗情報</h2>
+      <p class="sec-note src">現買取サイト掲載情報（kushiro.kaitoriok.com）。販売用の営業時間・店頭営業は要確認。</p>
+    </div>
+    <dl class="store-dl">
+      <div><dt>店名</dt><dd>釧路買取サービス リサイクルショップ ECOL（エコル）</dd></div>
+      <div><dt>所在地</dt><dd>〒085-0048 釧路市駒場町3-5-1 <a class="inline" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%87%A7%E8%B7%AF%E5%B8%82%E9%A7%92%E5%A0%B4%E7%94%BA3-5-1" target="_blank" rel="noopener">地図を開く</a></dd></div>
+      <div><dt>電話</dt><dd><a class="inline" href="tel:07020335427">070-2033-5427</a></dd></div>
+      <div><dt>営業時間</dt><dd>AM9:00〜PM6:00（日曜休）<span class="tbc">販売は要確認</span></dd></div>
+      <div><dt>駐車場</dt><dd><span class="tbc">未確定</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 9 LINE・問い合わせ -->
+<section class="line-cta" aria-labelledby="lineTitle">
+  <div class="wrap line-in">
+    <div>
+      <h2 id="lineTitle">気になったら、LINEで取り置き相談。</h2>
+      <p>商品名と写真を送るだけで話が進みます。大型のサイズ確認もここから。</p>
+      <p class="mono src2">LINEは現買取サイトの友だち追加URLを仮置き（販売用に分けるかは要確認）</p>
+    </div>
+    <div class="line-actions">
+      <a class="btn btn-line-lg" href="https://lin.ee/YkisLc0" target="_blank" rel="noopener">LINEで相談する</a>
+      <a class="btn btn-tel" href="tel:07020335427">電話 070-2033-5427</a>
+      <a class="line-more" href="../contact/">問い合わせページへ →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 10 買取のご案内 -->
+<section class="kaitori" aria-labelledby="kaitoriTitle">
+  <div class="wrap kaitori-in">
+    <h2 id="kaitoriTitle">売りたい方へ</h2>
+    <p>ご自宅の不用品の買取は、既存の買取サイトで受け付けています。</p>
+    <a class="btn btn-ghost-light" href="https://kushiro.kaitoriok.com/" target="_blank" rel="noopener">釧路買取サービスへ（別タブ）</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p class="foot-brand">ECOL</p>
+    <ul class="foot-links">
+      <li><a href="../products/">商品一覧</a></li>
+      <li><a href="../guide/">店頭受取・配送</a></li>
+      <li><a href="../store/">店舗情報</a></li>
+      <li><a href="../contact/">問い合わせ・LINE</a></li>
+      <li><a href="https://kushiro.kaitoriok.com/" target="_blank" rel="noopener">買取サイト</a></li>
+    </ul>
+    <p class="foot-note mono">試作（SAMPLE）。商品・価格はすべてサンプルで、実在庫や配送条件ではありません。本番公開前の確認用（noindex）。</p>
+  </div>
+</footer>
+
+<div class="dock" role="navigation" aria-label="かんたん操作">
+  <a class="dock-find" href="../products/">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>商品を探す
+  </a>
+  <a class="dock-line" href="https://lin.ee/YkisLc0" target="_blank" rel="noopener">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.2C4 7.2 7.6 4 12 4s8 3.2 8 7.2-3.6 7.2-8 7.2c-.8 0-1.600-.1-2.300-.3L6 20l.9-3.2C5.100 15.700 4 13.600 4 11.200Z"/></svg>LINEで相談
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>商品一覧 ｜ ECOL 釧路買取サービスのリユース販売（試作）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/base.css">
+</head>
+<body data-nav="products" data-bar="1">
+<main id="main">
+  <div class="wrap">
+    <div class="page-top">
+      <p class="crumbs"><a href="../b/index.html" data-top>リユース販売トップ</a><span>/</span>商品一覧</p>
+      <h1 class="h-page">商品一覧</h1>
+      <p class="lead">掲載しているのはすべてサンプルの商品です。条件を変えて、探し方と見え方をご確認ください。</p>
+    </div>
+    <div class="tabs" id="tabs" role="group" aria-label="カテゴリ"></div>
+    <div class="lay">
+      <aside class="filters" id="filters" aria-label="絞り込み"></aside>
+      <section aria-label="商品">
+        <div class="ltool">
+          <p class="count" aria-live="polite"><b id="num">–</b>件</p>
+          <div class="sort"><label for="sort">並び替え</label>
+            <select id="sort"><option value="new">新着順</option><option value="price_asc">価格の安い順</option><option value="price_desc">価格の高い順</option></select></div>
+          <button type="button" class="fbtn" id="fbtn" aria-controls="filters">絞り込む<em id="fcount"></em></button>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div class="pgrid" id="grid"><p style="grid-column:1/-1;color:#6a706c">読み込み中…</p></div>
+        <div class="empty" id="empty" hidden><p>条件に合う商品がありません。</p><button type="button" class="btn btn-outline" id="emptyReset">条件をクリアする</button></div>
+        <p class="more-note" id="hidden"></p>
+      </section>
+    </div>
+  </div>
+</main>
+<div class="scrim" id="scrim"></div>
+<script src="../assets/data.js"></script>
+<script src="../assets/layout.js"></script>
+<script src="../assets/list.js"></script>
+</body>
+</html>

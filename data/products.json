@@ -1,0 +1,1539 @@
+{
+  "schema_version": "0.2",
+  "meta": {
+    "sample": true,
+    "created": "2026-09-25",
+    "notice": "このファイルの商品は全てダミー（SAMPLE）です。ECOLの実在庫・実績・販売数・価格実績・配送条件ではありません。メーカー名は実在しますが、型番は架空、価格は仮です。",
+    "image_base": "site/ からの相対パス。画像は後段で作成",
+    "reviews": "レビュー・販売数は持たない",
+    "publish_rule": "表示側（一覧・詳細・TOP3案）は publish_state が \"published\" の商品だけを出す。draft／review は載せない。",
+    "future_flow_note": "将来（今回は実装しない）：スマホ撮影→指定場所へ送る→AI下書き（publish_state=draft／source=ai_draft）→人が確認（review→reviewed_by・reviewed_at）→公開（published）→LINE/SNSへ反映（sns_posts）。"
+  },
+  "categories": [
+    {
+      "id": "kaden",
+      "label": "家電",
+      "sub": [
+        {
+          "id": "reizouko",
+          "label": "冷蔵庫"
+        },
+        {
+          "id": "sentakuki",
+          "label": "洗濯機"
+        },
+        {
+          "id": "tv",
+          "label": "テレビ"
+        },
+        {
+          "id": "kitchen",
+          "label": "キッチン家電"
+        }
+      ]
+    },
+    {
+      "id": "kagu",
+      "label": "家具・収納",
+      "sub": [
+        {
+          "id": "sofa",
+          "label": "ソファ"
+        },
+        {
+          "id": "table",
+          "label": "テーブル・イス"
+        },
+        {
+          "id": "storage",
+          "label": "収納・食器棚"
+        },
+        {
+          "id": "desk",
+          "label": "机"
+        }
+      ]
+    },
+    {
+      "id": "kougu",
+      "label": "工具・DIY",
+      "sub": [
+        {
+          "id": "denki",
+          "label": "電動工具"
+        }
+      ]
+    },
+    {
+      "id": "outdoor",
+      "label": "アウトドア",
+      "sub": [
+        {
+          "id": "tent",
+          "label": "テント・シェルター"
+        }
+      ]
+    },
+    {
+      "id": "bicycle",
+      "label": "自転車",
+      "sub": [
+        {
+          "id": "city",
+          "label": "シティサイクル"
+        },
+        {
+          "id": "assist",
+          "label": "電動アシスト"
+        }
+      ]
+    },
+    {
+      "id": "winter",
+      "label": "冬・除雪",
+      "sub": [
+        {
+          "id": "stove",
+          "label": "ストーブ"
+        },
+        {
+          "id": "josetsu",
+          "label": "除雪機"
+        },
+        {
+          "id": "yukikaki",
+          "label": "雪かき用品"
+        },
+        {
+          "id": "tire",
+          "label": "タイヤ"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "label": "その他",
+      "sub": []
+    }
+  ],
+  "condition_ranks": {
+    "tentative": true,
+    "items": [
+      {
+        "id": "S",
+        "label": "未使用に近い",
+        "desc": "未使用・ほぼ使用感なし。付属品が揃う（仮）"
+      },
+      {
+        "id": "A",
+        "label": "きれい",
+        "desc": "使用感は少ない。目立つ傷・汚れなし（仮）"
+      },
+      {
+        "id": "B",
+        "label": "ふつう",
+        "desc": "通常の使用感。小さな傷・汚れあり。動作に問題なし（仮）"
+      },
+      {
+        "id": "C",
+        "label": "使用感あり",
+        "desc": "傷・汚れ・色あせが目立つ。使用に問題はないが見た目は割り切りが必要（仮）"
+      },
+      {
+        "id": "W",
+        "label": "訳あり",
+        "desc": "欠品・動作の一部不具合・破損など。理由を明記（仮）"
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "ecol-0001",
+      "sample": true,
+      "status": "available",
+      "title": "3ドア冷蔵庫 365L",
+      "category": "kaden",
+      "subcategory": "reizouko",
+      "brand": "Panasonic",
+      "model": "SAMPLE-NR-A365",
+      "year": 2021,
+      "size": {
+        "w": 60,
+        "d": 69,
+        "h": 182,
+        "unit": "cm",
+        "weight_kg": 72
+      },
+      "condition_rank": "A",
+      "condition_note": "内外ともきれい。ニオイ・霜つきなし（サンプル記載）",
+      "damage_notes": [
+        "背面に小さな擦り傷（サンプル）"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "取扱説明書",
+        "製氷皿"
+      ],
+      "price": 38000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": true,
+      "recycle_law_item": true,
+      "images": [
+        "img/products/ecol-0001.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "新生活"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-24",
+      "updated_at": "2026-09-24",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0002",
+      "sample": true,
+      "status": "available",
+      "title": "縦型洗濯機 8kg",
+      "category": "kaden",
+      "subcategory": "sentakuki",
+      "brand": "HITACHI",
+      "model": "SAMPLE-BW-A80",
+      "year": 2020,
+      "size": {
+        "w": 55,
+        "d": 58,
+        "h": 98,
+        "unit": "cm",
+        "weight_kg": 38
+      },
+      "condition_rank": "B",
+      "condition_note": "槽の汚れは清掃済み（サンプル記載）",
+      "damage_notes": [
+        "フタに使用感",
+        "本体側面に色あせ"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "給水ホース"
+      ],
+      "price": 22000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": true,
+      "recycle_law_item": true,
+      "images": [
+        "img/products/ecol-0002.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "新生活"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-23",
+      "updated_at": "2026-09-23",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0003",
+      "sample": true,
+      "status": "sold",
+      "title": "43型 液晶テレビ",
+      "category": "kaden",
+      "subcategory": "tv",
+      "brand": "SHARP",
+      "model": "SAMPLE-4T-C43",
+      "year": 2022,
+      "size": {
+        "w": 97,
+        "d": 25,
+        "h": 62,
+        "unit": "cm",
+        "weight_kg": 9
+      },
+      "condition_rank": "A",
+      "condition_note": "画面にドット抜け・焼け無し（サンプル記載）",
+      "damage_notes": [
+        "スタンドに小傷"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "リモコン",
+        "電源コード",
+        "スタンド"
+      ],
+      "price": 28000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": false,
+      "recycle_law_item": true,
+      "images": [
+        "img/products/ecol-0003.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "新生活"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-22",
+      "updated_at": "2026-09-24",
+      "reserved_until": null,
+      "sold_at": "2026-09-24",
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0004",
+      "sample": true,
+      "status": "available",
+      "title": "オーブンレンジ 26L",
+      "category": "kaden",
+      "subcategory": "kitchen",
+      "brand": "Panasonic",
+      "model": "SAMPLE-NE-R26",
+      "year": 2021,
+      "size": {
+        "w": 49,
+        "d": 40,
+        "h": 36,
+        "unit": "cm",
+        "weight_kg": 15
+      },
+      "condition_rank": "B",
+      "condition_note": "加熱・オーブン機能の動作確認済み（サンプル記載）",
+      "damage_notes": [
+        "庫内に使用感",
+        "扉のパッキンに小さな汚れ"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "角皿",
+        "取扱説明書"
+      ],
+      "price": 9800,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "available",
+      "large_item": false,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0004.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "新生活",
+        "キッチン"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-24",
+      "updated_at": "2026-09-24",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0005",
+      "sample": true,
+      "status": "reserved",
+      "title": "2人掛けファブリックソファ",
+      "category": "kagu",
+      "subcategory": "sofa",
+      "brand": "ニトリ",
+      "model": "SAMPLE-SF-2P",
+      "year": null,
+      "size": {
+        "w": 150,
+        "d": 80,
+        "h": 78,
+        "unit": "cm",
+        "weight_kg": 24
+      },
+      "condition_rank": "B",
+      "condition_note": "座面のへたりは小さめ（サンプル記載）",
+      "damage_notes": [
+        "肘掛けに擦れ",
+        "右側面に薄いシミ"
+      ],
+      "working_status": "n/a",
+      "accessories": [
+        "脚ネジ"
+      ],
+      "price": 12000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": true,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0005.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "新生活"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-21",
+      "updated_at": "2026-09-21",
+      "reserved_until": "2026-09-28",
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0006",
+      "sample": true,
+      "status": "available",
+      "title": "木製ダイニングテーブル＋チェア2脚",
+      "category": "kagu",
+      "subcategory": "table",
+      "brand": "カリモク",
+      "model": "SAMPLE-DT-120",
+      "year": null,
+      "size": {
+        "w": 120,
+        "d": 75,
+        "h": 70,
+        "unit": "cm",
+        "weight_kg": 32
+      },
+      "condition_rank": "A",
+      "condition_note": "天板に大きなキズなし。チェアのぐらつきなし（サンプル記載）",
+      "damage_notes": [
+        "天板に細かな使用キズ"
+      ],
+      "working_status": "n/a",
+      "accessories": [
+        "チェア2脚"
+      ],
+      "price": 26000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": true,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0006.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "ダイニング"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-23",
+      "updated_at": "2026-09-23",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0007",
+      "sample": true,
+      "status": "available",
+      "title": "食器棚（キッチンボード）幅90",
+      "category": "kagu",
+      "subcategory": "storage",
+      "brand": "ニトリ",
+      "model": "SAMPLE-KB-90",
+      "year": null,
+      "size": {
+        "w": 90,
+        "d": 45,
+        "h": 180,
+        "unit": "cm",
+        "weight_kg": 45
+      },
+      "condition_rank": "B",
+      "condition_note": "引き出しの動きは良好、扉の建付け良（サンプル記載）",
+      "damage_notes": [
+        "側面に擦り傷",
+        "棚板に使用感"
+      ],
+      "working_status": "n/a",
+      "accessories": [
+        "棚板4枚"
+      ],
+      "price": 15000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": true,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0007.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "キッチン",
+        "収納"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-22",
+      "updated_at": "2026-09-22",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0008",
+      "sample": true,
+      "status": "available",
+      "title": "5段チェスト",
+      "category": "kagu",
+      "subcategory": "storage",
+      "brand": "アイリスオーヤマ",
+      "model": "SAMPLE-CH-5D",
+      "year": null,
+      "size": {
+        "w": 78,
+        "d": 40,
+        "h": 109,
+        "unit": "cm",
+        "weight_kg": 16
+      },
+      "condition_rank": "B",
+      "condition_note": "引き出し全段スムーズ（サンプル記載）",
+      "damage_notes": [
+        "天板に軽い擦れ"
+      ],
+      "working_status": "n/a",
+      "accessories": [],
+      "price": 4800,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "available",
+      "large_item": false,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0008.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "収納"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-20",
+      "updated_at": "2026-09-20",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0009",
+      "sample": true,
+      "status": "available",
+      "title": "学習机（棚付き）",
+      "category": "kagu",
+      "subcategory": "desk",
+      "brand": "コイズミ",
+      "model": "SAMPLE-DK-100",
+      "year": null,
+      "size": {
+        "w": 100,
+        "d": 60,
+        "h": 98,
+        "unit": "cm",
+        "weight_kg": 30
+      },
+      "condition_rank": "B",
+      "condition_note": "天板はマット使用のため傷少なめ（サンプル記載）",
+      "damage_notes": [
+        "引き出し取っ手に色あせ",
+        "側面にシール跡"
+      ],
+      "working_status": "n/a",
+      "accessories": [
+        "椅子は付属しません"
+      ],
+      "price": 14000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": true,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0009.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "新生活",
+        "進学"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-19",
+      "updated_at": "2026-09-19",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0010",
+      "sample": true,
+      "status": "available",
+      "title": "充電式インパクトドライバー セット",
+      "category": "kougu",
+      "subcategory": "denki",
+      "brand": "マキタ",
+      "model": "SAMPLE-TD-18V",
+      "year": 2022,
+      "size": {
+        "w": 25,
+        "d": 8,
+        "h": 22,
+        "unit": "cm",
+        "weight_kg": 1.6
+      },
+      "condition_rank": "B",
+      "condition_note": "トルク・回転の動作確認済み（サンプル記載）",
+      "damage_notes": [
+        "グリップに使用感",
+        "バッテリーの容量は未測定（サンプル）"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "バッテリー2個",
+        "充電器",
+        "ケース"
+      ],
+      "price": 11000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "available",
+      "large_item": false,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0010.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "DIY"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-24",
+      "updated_at": "2026-09-24",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0011",
+      "sample": true,
+      "status": "sold",
+      "title": "丸ノコ 165mm",
+      "category": "kougu",
+      "subcategory": "denki",
+      "brand": "HiKOKI",
+      "model": "SAMPLE-CS-165",
+      "year": 2019,
+      "size": {
+        "w": 30,
+        "d": 25,
+        "h": 24,
+        "unit": "cm",
+        "weight_kg": 3.5
+      },
+      "condition_rank": "C",
+      "condition_note": "刃は交換前提（サンプル記載）",
+      "damage_notes": [
+        "ベースに擦り傷",
+        "本体に塗装ハゲ"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "ケース"
+      ],
+      "price": 6500,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "available",
+      "large_item": false,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0011.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "DIY"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-18",
+      "updated_at": "2026-09-23",
+      "reserved_until": null,
+      "sold_at": "2026-09-23",
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0012",
+      "sample": true,
+      "status": "available",
+      "title": "ドームテント 4〜5人用",
+      "category": "outdoor",
+      "subcategory": "tent",
+      "brand": "Coleman",
+      "model": "SAMPLE-DT-4P",
+      "year": 2021,
+      "size": {
+        "w": 52,
+        "d": 20,
+        "h": 20,
+        "unit": "cm",
+        "weight_kg": 7.5
+      },
+      "condition_rank": "A",
+      "condition_note": "フライ・ポールの欠品なし（サンプル記載）",
+      "damage_notes": [
+        "収納袋にスレ"
+      ],
+      "working_status": "n/a",
+      "accessories": [
+        "ポール",
+        "ペグ",
+        "ロープ",
+        "収納袋"
+      ],
+      "price": 16000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "available",
+      "large_item": false,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0012.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "キャンプ"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-24",
+      "updated_at": "2026-09-24",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0013",
+      "sample": true,
+      "status": "available",
+      "title": "石油ストーブ（対流型）",
+      "category": "winter",
+      "subcategory": "stove",
+      "brand": "トヨトミ",
+      "model": "SAMPLE-KS-67",
+      "year": 2020,
+      "size": {
+        "w": 48,
+        "d": 48,
+        "h": 53,
+        "unit": "cm",
+        "weight_kg": 8.5
+      },
+      "condition_rank": "B",
+      "condition_note": "点火・燃焼の動作確認済み（サンプル記載）",
+      "damage_notes": [
+        "天板に使用感",
+        "外装に軽い色あせ"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "取扱説明書",
+        "給油ポンプ"
+      ],
+      "price": 7800,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": false,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0013.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。ストーブ・燃料の扱いは商品ごとに案内予定。",
+      "tags": [
+        "冬支度",
+        "北海道"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-23",
+      "updated_at": "2026-09-23",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0014",
+      "sample": true,
+      "status": "sold",
+      "title": "27インチ シティサイクル",
+      "category": "bicycle",
+      "subcategory": "city",
+      "brand": "ブリヂストン",
+      "model": "SAMPLE-CY-27",
+      "year": 2021,
+      "size": {
+        "w": 60,
+        "d": 175,
+        "h": 105,
+        "unit": "cm",
+        "weight_kg": 17
+      },
+      "condition_rank": "B",
+      "condition_note": "ブレーキ・変速の調整済み（サンプル記載）",
+      "damage_notes": [
+        "フレームに擦り傷",
+        "サドルにスレ"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "カギ",
+        "前カゴ"
+      ],
+      "price": 8800,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": false,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0014.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "通学",
+        "通勤"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-17",
+      "updated_at": "2026-09-22",
+      "reserved_until": null,
+      "sold_at": "2026-09-22",
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0015",
+      "sample": true,
+      "status": "available",
+      "title": "電動アシスト自転車",
+      "category": "bicycle",
+      "subcategory": "assist",
+      "brand": "Panasonic",
+      "model": "SAMPLE-EB-26",
+      "year": 2022,
+      "size": {
+        "w": 60,
+        "d": 175,
+        "h": 105,
+        "unit": "cm",
+        "weight_kg": 25
+      },
+      "condition_rank": "A",
+      "condition_note": "アシスト動作確認済み。バッテリー劣化は未測定（サンプル記載）",
+      "damage_notes": [
+        "フレームに小傷",
+        "バッテリー劣化は要確認"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "バッテリー",
+        "充電器",
+        "カギ"
+      ],
+      "price": 42000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": true,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0015.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "通学",
+        "通勤"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-22",
+      "updated_at": "2026-09-22",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0016",
+      "sample": true,
+      "status": "available",
+      "title": "小型ガソリン除雪機",
+      "category": "winter",
+      "subcategory": "josetsu",
+      "brand": "ホンダ",
+      "model": "SAMPLE-HS-560",
+      "year": 2018,
+      "size": {
+        "w": 56,
+        "d": 120,
+        "h": 95,
+        "unit": "cm",
+        "weight_kg": 60
+      },
+      "condition_rank": "C",
+      "condition_note": "エンジン始動確認済み。整備履歴は不明（サンプル記載）",
+      "damage_notes": [
+        "カバーに割れ補修跡",
+        "オーガーに使用感"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "取扱説明書"
+      ],
+      "price": 68000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": true,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0016.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。搬入方法は要相談。",
+      "tags": [
+        "冬支度",
+        "北海道",
+        "除雪"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-21",
+      "updated_at": "2026-09-21",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0017",
+      "sample": true,
+      "status": "available",
+      "title": "スノーダンプ＆雪かきスコップ セット",
+      "category": "winter",
+      "subcategory": "yukikaki",
+      "brand": null,
+      "model": null,
+      "year": null,
+      "size": {
+        "w": 60,
+        "d": 40,
+        "h": 110,
+        "unit": "cm",
+        "weight_kg": 3
+      },
+      "condition_rank": "B",
+      "condition_note": "シーズン使用後の水洗い済み（サンプル記載）",
+      "damage_notes": [
+        "ブレードに擦れ"
+      ],
+      "working_status": "n/a",
+      "accessories": [
+        "スノーダンプ",
+        "スコップ2本"
+      ],
+      "price": 2500,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "available",
+      "large_item": false,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0017.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。",
+      "tags": [
+        "冬支度",
+        "北海道",
+        "除雪"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-24",
+      "updated_at": "2026-09-24",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0018",
+      "sample": true,
+      "status": "available",
+      "title": "冬用タイヤ4本セット 195/65R15",
+      "category": "winter",
+      "subcategory": "tire",
+      "brand": "ブリヂストン",
+      "model": "SAMPLE-TR-1565",
+      "year": 2022,
+      "size": {
+        "w": 65,
+        "d": 20,
+        "h": 65,
+        "unit": "cm",
+        "weight_kg": 40
+      },
+      "condition_rank": "W",
+      "condition_note": "溝は残りあり。ホイール無し・適合車種は要確認（サンプル記載）",
+      "damage_notes": [
+        "サイドにひび割れ細かい"
+      ],
+      "working_status": "n/a",
+      "accessories": [],
+      "price": 18000,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "ask",
+      "large_item": true,
+      "recycle_law_item": false,
+      "images": [
+        "img/products/ecol-0018.jpg"
+      ],
+      "description": "ダミーの説明文です。実在庫ではありません。適合はご相談ください。",
+      "tags": [
+        "冬支度",
+        "北海道"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-23",
+      "updated_at": "2026-09-23",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "published",
+      "source": "manual",
+      "ai_draft": null,
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    },
+    {
+      "id": "ecol-0019",
+      "sample": true,
+      "status": "available",
+      "title": "（下書きサンプル）AI下書きの商品",
+      "category": "kaden",
+      "subcategory": "kitchen",
+      "brand": "Panasonic",
+      "model": "SAMPLE-NE-R26",
+      "year": 2021,
+      "size": {
+        "w": 49,
+        "d": 40,
+        "h": 36,
+        "unit": "cm",
+        "weight_kg": 15
+      },
+      "condition_rank": "B",
+      "condition_note": "加熱・オーブン機能の動作確認済み（サンプル記載）",
+      "damage_notes": [
+        "庫内に使用感",
+        "扉のパッキンに小さな汚れ"
+      ],
+      "working_status": "confirmed",
+      "accessories": [
+        "角皿",
+        "取扱説明書"
+      ],
+      "price": 9800,
+      "price_tentative": true,
+      "pickup": "available",
+      "delivery": "available",
+      "large_item": false,
+      "recycle_law_item": false,
+      "images": [],
+      "description": "AI下書きの見本データです。公開前の確認待ちで、サイトには表示されません。",
+      "tags": [
+        "新生活",
+        "キッチン"
+      ],
+      "store_id": "main",
+      "posted_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "reserved_until": null,
+      "sold_at": null,
+      "sns_posted": {
+        "line": false,
+        "instagram": false,
+        "x": false
+      },
+      "source_ref": null,
+      "publish_state": "draft",
+      "source": "ai_draft",
+      "ai_draft": {
+        "model": "sample-model（実在のモデル名ではない見本）",
+        "generated_at": "2026-09-26T00:30:00+09:00",
+        "confidence_note": "サンプル。写真から推定した項目は人が確認するまで公開しない。"
+      },
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "original_images": [
+        "inbox/sample/IMG_0001.jpg"
+      ],
+      "sns_posts": {
+        "line": {
+          "state": "none",
+          "posted_at": null
+        },
+        "instagram": {
+          "state": "none",
+          "posted_at": null
+        },
+        "x": {
+          "state": "none",
+          "posted_at": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ECOL（エコル）｜釧路買取サービスのリユース販売【確認用の試作・SAMPLE】</title>
+<meta name="description" content="釧路買取サービスに付随するリユース販売ページの確認用の試作です。商品と価格はすべてサンプルです。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p class="sample-bar">試作（SAMPLE）・商品と価格はすべてサンプルです</p>
+
+<header class="hd" id="top">
+  <div class="wrap hd-in">
+    <a class="logo" href="./" aria-label="ECOL リユース販売 トップへ"><span class="logo-m">ECOL</span><span class="logo-s">釧路買取サービスの<br>リユース販売</span></a>
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <a href="#new">新着</a>
+      <a href="#category">カテゴリ</a>
+      <a href="../products/">商品を探す</a>
+      <a href="../guide/">配送について</a>
+      <a href="../store/">事業者情報</a>
+      <a href="../contact/">お問い合わせ</a>
+      <a class="gnav-ext" href="https://kushiro.kaitoriok.com/" target="_blank" rel="noopener">買取・不用品回収はこちら ↗</a>
+    </nav>
+    <a class="hd-ext" href="https://kushiro.kaitoriok.com/" target="_blank" rel="noopener">買取・不用品回収はこちら<span class="arw" aria-hidden="true">↗</span></a>
+    <a class="hd-line" href="https://lin.ee/YkisLc0" target="_blank" rel="noopener">公式LINE</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="gnav">メニュー</button>
+  </div>
+  <div class="tabs" data-tabs aria-label="カテゴリ"></div>
+</header>
+
+<main>
+
+<!-- 2 ヒーロー -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow"><span>KUSHIRO REUSE</span><span>釧路買取サービスのリユース販売</span></p>
+      <h1><span>次の暮らしへ、</span><span>いい中古を。</span></h1>
+      <p class="lead">釧路買取サービスが扱う、リユース品の新着です。<br>状態は写真と言葉で、そのままお見せします。</p>
+      <div class="cta-row">
+        <a class="btn" href="#new">新着を見る<span class="arw" aria-hidden="true">↓</span></a>
+        <a class="tl" href="../products/">商品をすべて見る<span class="arw" aria-hidden="true">→</span></a>
+      </div>
+      <p class="hero-buy">お持ちの品の買取・不用品回収は<a class="tl" href="https://kushiro.kaitoriok.com/" target="_blank" rel="noopener">釧路買取サービス<span class="arw" aria-hidden="true">↗</span></a></p>
+      <p class="upd" data-updated></p>
+    </div>
+    <figure class="hero-fig">
+      <span class="ph hero-ph" data-t="ECOL｜イメージ写真（SAMPLE）"><img src="../img/hero/b.jpg" alt="白い壁の部屋に置かれた中古のソファとテーブルのイメージ写真（SAMPLE）" fetchpriority="high" decoding="async"></span>
+      <figcaption>イメージ写真（SAMPLE）。掲載商品ではありません。</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 3 新着 -->
+<section class="sec sec-new" id="new">
+  <div class="wrap">
+    <header class="sh sh--lg">
+      <span class="no">01</span>
+      <h2>新着</h2>
+      <a class="more" href="../products/?sort=new">新着をすべて見る<span class="arw" aria-hidden="true">→</span></a>
+    </header>
+    <div class="new-a">
+      <div class="new-a-l" data-feat-img></div>
+      <div class="new-a-r">
+        <div data-feat-body></div>
+        <div class="new-list" data-list></div>
+      </div>
+    </div>
+    <div class="new-b" data-stagger></div>
+    <p class="load-err" data-err hidden>商品データを読み込めませんでした。</p>
+  </div>
+</section>
+
+<!-- 取り置き中・SOLD OUT の表示 -->
+<section class="sec sec--paper sec-mini" aria-labelledby="h-sold">
+  <div class="wrap">
+    <header class="sh sh--sm">
+      <span class="no">—</span>
+      <h2 id="h-sold">取り置き中・SOLD OUT</h2>
+      <p class="sh-note">表示のサンプルです</p>
+    </header>
+    <div class="sold-row" data-sold></div>
+  </div>
+</section>
+
+<!-- 4 カテゴリ -->
+<section class="sec" id="category">
+  <div class="wrap">
+    <header class="sh">
+      <span class="no">02</span>
+      <h2>カテゴリから探す</h2>
+      <p class="sh-note">点数は販売中・取り置き中（SAMPLE）</p>
+    </header>
+    <div class="cats" data-cats></div>
+  </div>
+</section>
+
+<!-- 5 商品を探す導線 -->
+<section class="sec sec--paper" id="search">
+  <div class="wrap find">
+    <div class="find-l">
+      <span class="no">03</span>
+      <h2>商品を探す</h2>
+      <p class="sh-note">商品名・メーカー・型番で。</p>
+    </div>
+    <div class="find-r">
+      <form action="../products/" method="get" role="search" class="find-form">
+        <label class="sr" for="q">キーワード</label>
+        <input id="q" name="q" type="search" placeholder="例：冷蔵庫、Panasonic" autocomplete="off">
+        <button type="submit" class="btn btn--sq">探す</button>
+      </form>
+      <ul class="chips">
+        <li><a href="../products/?status=available">販売中のみ</a></li>
+        <li><a href="../products/?sort=new">新着順</a></li>
+        <li><a href="../products/?sort=price_asc">価格の安い順</a></li>
+        <li><a href="../products/?q=新生活">新生活</a></li>
+        <li><a href="../products/?q=冬支度">冬支度</a></li>
+      </ul>
+      <a class="tl" href="../products/">商品一覧をひらく<span class="arw" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 状態のみかた -->
+<section class="sec sec--ink" id="rank">
+  <div class="wrap">
+    <header class="sh sh--inv">
+      <span class="no">04</span>
+      <h2>状態のみかた</h2>
+      <p class="sh-note">ランクは仮の基準です（クライアント確認中）</p>
+    </header>
+    <ol class="ranks" data-ranks></ol>
+    <p class="rank-foot">傷・汚れは文章でも書きます。家電は「動作確認」をランクとは別に表示します。</p>
+  </div>
+</section>
+
+<!-- 6・7 配送／大型相談 -->
+<section class="sec" id="delivery">
+  <div class="wrap">
+    <header class="sh">
+      <span class="no">05</span>
+      <h2>買い方と配送</h2>
+      <a class="more" href="../guide/">配送について<span class="arw" aria-hidden="true">→</span></a>
+    </header>
+    <ol class="ways">
+      <li>
+        <span class="w-no">a</span>
+        <div class="w-b"><h3>公式LINE・問い合わせフォームで相談</h3><p>気になる商品の名前と商品IDを伝えて、状態の確認や取り置きの相談ができます。ご購入は、その後の配送のご相談へと進みます。</p></div>
+        <span class="tbc">取り置き期間・お支払い方法は要確認</span>
+      </li>
+      <li>
+        <span class="w-no">b</span>
+        <div class="w-b"><h3>配送でお届け</h3><p>実店舗はなく、購入品は配送が基本です。北海道内を中心に考えています。</p></div>
+        <span class="tbc">配送地域・料金は未確定</span>
+      </li>
+      <li>
+        <span class="w-no">c</span>
+        <div class="w-b"><h3>大型の家具・家電は相談</h3><p>搬入サイズ・階数・お届け先の地域を、購入の前にお知らせください。冷蔵庫・洗濯機などの古い品の引き取りは、対応可否を確認中です。</p></div>
+        <span class="tbc">大型の扱い・リサイクル品の引取は要確認</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 8 事業者情報 / 配送について -->
+<section class="sec sec--paper" id="store">
+  <div class="wrap store">
+    <div class="store-l">
+      <header class="sh sh--col">
+        <span class="no">06</span>
+        <h2>事業者情報 / 配送について</h2>
+      </header>
+      <p class="src">現買取サイト掲載情報</p>
+      <p class="shop">合同会社ECOL<span>（釧路買取サービス）</span></p>
+      <p class="addr"><span>〒085-0048</span>釧路市駒場町3-5-1</p>
+      <div class="cta-row">
+        <a class="tl" href="../store/">事業者情報のページへ<span class="arw" aria-hidden="true">→</span></a>
+        <a class="tl" href="../guide/">配送について<span class="arw" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <dl class="store-r">
+      <div><dt>販売の形</dt><dd>実店舗はなく、事務所内の倉庫を使っています。<em>来店での受け取り・お渡しは行っていません</em></dd></div>
+      <div><dt>お渡し方法</dt><dd>配送が基本です</dd></div>
+      <div><dt>配送地域・料金</dt><dd><span class="tbc">未確定</span><em>北海道内を中心に考えています。地域・商品・建物の条件に合わせて、個別にお見積りする想定です</em></dd></div>
+      <div><dt>公式LINE</dt><dd><a href="https://lin.ee/YkisLc0" target="_blank" rel="noopener">友だち追加</a></dd></div>
+      <div><dt>電話（補助）</dt><dd><a href="tel:07020335427">070-2033-5427</a><em>AM9:00–PM6:00（日曜休）／現買取サイトの受付時間</em></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 9 LINE・問い合わせフォーム -->
+<section class="sec sec--green line-sec" id="line">
+  <div class="wrap line-in">
+    <div>
+      <p class="eyebrow eyebrow--inv"><span>CONTACT</span><span>相談・取り置き</span></p>
+      <h2>気になる商品は、<br>まず相談から。</h2>
+      <p class="lead lead--inv">商品の名前を伝えて、状態や配送について聞けます。どちらも釧路買取サービスと共通の窓口です。取り置きの流れ・期間は確認中です（仮）。</p>
+    </div>
+    <div class="line-act">
+      <div class="act-two">
+        <a class="btn btn--inv" href="https://lin.ee/YkisLc0" target="_blank" rel="noopener">公式LINEで相談する<span class="arw" aria-hidden="true">↗</span></a>
+        <a class="btn btn--inv" href="https://kushiro.kaitoriok.com/#ask" target="_blank" rel="noopener">問い合わせフォーム<span class="arw" aria-hidden="true">↗</span></a>
+      </div>
+      <a class="tl tl--inv" href="../contact/">相談用の文面をコピーする<span class="arw" aria-hidden="true">→</span></a>
+      <a class="tl tl--inv" href="tel:07020335427">電話（補助）070-2033-5427</a>
+      <p class="fine">LINEだけで購入が完了するとは限りません。内容を確認して、取り置き・配送・お支払いを順にご案内します。営業時間外のメッセージは、翌日のお返事になる場合があります（現買取サイト掲載）。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 買取 -->
+<section class="sec sec-buy">
+  <div class="wrap buy">
+    <div>
+      <span class="no">07</span>
+      <h2>買取・不用品回収は<br>釧路買取サービスへ</h2>
+    </div>
+    <div>
+      <p>不用品の買取・不用品回収のご相談は、釧路買取サービス（既存サイト）で受け付けています。このリユース販売は、その販売ページです。</p>
+      <a class="tl" href="https://kushiro.kaitoriok.com/" target="_blank" rel="noopener">買取・不用品回収はこちら（別タブ）<span class="arw" aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 11 フッター -->
+<footer class="ft">
+  <div class="wrap ft-in">
+    <div class="ft-brand">
+      <span class="logo-m">ECOL</span>
+      <p>釧路買取サービスのリユース販売<br>運営：合同会社ECOL　釧路市駒場町3-5-1（現買取サイト掲載情報）<br>実店舗はなく、購入品は配送が基本です。</p>
+    </div>
+    <nav class="ft-nav" aria-label="フッター">
+      <a href="../products/">商品を探す</a>
+      <a href="../guide/">配送について</a>
+      <a href="../store/">事業者情報</a>
+      <a href="../contact/">お問い合わせ</a>
+      <a href="https://kushiro.kaitoriok.com/#ask" target="_blank" rel="noopener">問い合わせフォーム↗</a>
+      <a href="https://kushiro.kaitoriok.com/" target="_blank" rel="noopener">買取・不用品回収↗</a>
+    </nav>
+    <p class="ft-note">確認用の試作（SAMPLE）です。公開していません。商品と価格はすべてサンプルです。</p>
+  </div>
+</footer>
+
+<div class="dock" role="navigation" aria-label="固定メニュー">
+  <a href="../products/">商品を探す</a>
+  <a href="https://kushiro.kaitoriok.com/#ask" target="_blank" rel="noopener">フォーム</a>
+  <a class="dock-line" href="https://lin.ee/YkisLc0" target="_blank" rel="noopener">公式LINE</a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
