@@ -22,7 +22,7 @@
     hours: 'AM9:00〜PM6:00（日曜休）',
     license: '第134010001407号',
     line: 'https://lin.ee/YkisLc0',
-    buy: 'https://kushiro.kaitoriok.com/',
+    buy: 'https://shi-96.github.io/ecol-kaitori-site/',
     form: 'https://kushiro.kaitoriok.com/#ask', // 既存の問い合わせフォーム（メール返信系）。本番サイトなので読むだけ・リンクだけ
     map: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('北海道釧路市駒場町3-5-1')
   };
