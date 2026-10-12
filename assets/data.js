@@ -19,7 +19,7 @@
     address: '釧路市駒場町3-5-1',
     tel: '070-2033-5427',
     telHref: 'tel:07020335427',
-    hours: 'AM9:00〜PM6:00（日曜休）',
+    hours: 'AM9:00〜PM5:00（日曜休）',
     license: '第134010001407号',
     line: 'https://lin.ee/YkisLc0',
     buy: 'https://shi-96.github.io/ecol-kaitori-site/',
