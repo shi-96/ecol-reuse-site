@@ -52,7 +52,9 @@ code { font: 12px/1.6 ui-monospace, Menlo, monospace; background: var(--sand); p
 .sample-band a { color: #fff; white-space: nowrap; }
 .sample-band .sb-msg { min-width: 0; }
 .sample-band .s { display: none; }
-@media (max-width: 600px) { .sample-band .l { display: none; } .sample-band .s { display: inline; } }
+.sample-band .sb-msg, .sample-band .sb-msg .s { white-space: nowrap; }
+.sample-band .bk-s { display: none; }
+@media (max-width: 600px) { .sample-band .l { display: none; } .sample-band .s { display: inline; } .sample-band .bk-l { display: none; } .sample-band .bk-s { display: inline; } }
 
 /* ---------- ヘッダー ---------- */
 .site-head { background: #fff; border-bottom: 1px solid var(--line); position: relative; z-index: 30; }
@@ -379,3 +381,7 @@ body.lock { overflow: hidden; }
 }
 .page-kuma { float: right; height: 132px; width: auto; margin: 0 0 12px 24px; }
 @media (max-width: 599px) { .page-kuma { height: 84px; margin-left: 12px; } }
+
+/* 24時間受付の注記 */
+.accept-note { margin: 0 0 12px; padding: 10px 14px; border-left: 3px solid var(--green); background: #f4f7f4; font-size: 13px; line-height: 1.7; }
+.accept-note b { display: block; font-size: 15px; color: var(--green); }

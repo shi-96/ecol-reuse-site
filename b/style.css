@@ -392,3 +392,8 @@ a:hover .ph img{transform:scale(1.035)}
   html{scroll-behavior:auto}
   *,*::before,*::after{transition:none!important;animation:none!important}
 }
+
+/* 24時間受付の注記 */
+.accept-note{margin:0;font-size:13px;line-height:1.8;color:rgba(255,255,255,.86)}
+.accept-note b{display:block;font-size:17px;font-weight:700;color:#fff;letter-spacing:.02em}
+@media (max-width:640px){.accept-note b{font-size:15.5px}}

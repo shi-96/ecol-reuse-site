@@ -20,7 +20,7 @@
   L.bandHTML = function () {
     return '<div class="sample-band" role="note"><div class="wrap">' +
       '<span class="sb-msg"><b>試作</b>SAMPLE<span class="l">　商品・価格はすべてサンプルです（確認用・非公開）</span><span class="s">　価格はサンプル</span></span>' +
-      (sameAsTop() ? '' : '<a href="' + E.topHref() + '">← ' + E.topName() + 'へ戻る</a>') + '</div></div>';
+      (sameAsTop() ? '' : '<a href="' + E.topHref() + '">← <span class="bk-l">' + E.topName() + 'へ戻る</span><span class="bk-s">トップへ</span></a>') + '</div></div>';
   };
   L.logoHTML = function (cls, lazy) {
     return '<picture><source srcset="' + u('img/brand/ecol-logo.webp') + '" type="image/webp"><img class="' + cls + '" src="' + u('img/brand/ecol-logo.png') + '" width="430" height="200" alt="ECOL（エコル）"' + (lazy ? ' loading="lazy"' : '') + '></picture>';
